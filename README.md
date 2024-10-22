@@ -1,16 +1,31 @@
-To start your mongoshell type the following command:
+To start your mongoshell type the following command :
+
 mongosh
 
-To create a database or switch to codetribe use the following command:
-use Codetribe
+To create or switch to the Codetribe database type the following command:
 
-To create a collection or switch to users use the following command:
-db.createCollection("Facilitators")
+use CodeTribe
 
-db.createCollection("Trainees")
+To create the Facilitators collection type the following command:
 
-To create a project or switch to users use the following command:
-db.createCollection("Project")
+db.createCollection('Facilitators')
 
-To create a document or switch to users use the following command:
-db.createCollection("Document) 
+To create the Trainees coolection type the following command:
+
+db.createCollection('Trainees')
+
+To create the Projects coolection type the following command:
+
+db.createCollection('Projects')
+
+To insert data into the Facilitators collection type the following command:
+
+db.Facilitators.insertOne({Name:'Kb', Location:'Kimberly', Course:'React-development'})
+
+To insert data into the Trainees collection type the following command:
+
+db.Trainees.insertOne({Name:'Lebz', Location:'Kimberly', Facilitator:'Kaybee'})
+
+To insert data into the Projects collection type the following command:
+
+db.Projects.insertOne({Name:'React', Course:'App-development', Lesson:'Types of databases'})
